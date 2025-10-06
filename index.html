@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interview Question Day1 In CSS</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <!-- CSS Day1 Interview Question -->
+
+    <!-- Q1:  Difference between flex row and flex column ?  -->
+     <!-- Ans:             Flex Row (flex-direction: row)
+
+                   * Default direction for flex containers.
+
+                  *  Items are placed horizontally (left to right).
+
+                  *  Main axis = horizontal, cross axis = vertical.
+
+                   * justify-content controls horizontal alignment.
+
+                   * align-items controls vertical alignment.
+
+
+
+                           Flex Column (flex-direction: column)
+
+                      *  Items are placed vertically (top to bottom).
+
+                      *  Main axis = vertical, cross axis = horizontal.
+
+                      *  justify-content controls vertical alignment.
+
+                      *  align-items controls horizontal alignment.
+  -->
+
+   <h2>Flex ROw Example</h2>
+   <div class="container">
+    <div class="box">1</div>
+    <div class="box"> 2</div>
+    <div class="box">3</div>
+   </div>
+   <h2>Flex Column Example</h2>
+      <div class="container2">
+    <div class="card">1</div>
+    <div class="card"> 2</div>
+    <div class="card">3</div>
+   </div>
+
+    <!-- Q2: Explain inline internal and external stylesheet in short bullet point answer for interview ? -->
+     <!-- Ans: Inline CSS
+
+      * Written inside the HTML element using the style attribute.
+
+       * Affects only that specific element.
+
+            Example: <p style="color: red;">Text</p>
+
+       * Highest priority, but not reusable.
+
+Internal CSS:-
+
+* Written inside <style> tag within the <head> section of the HTML file.
+
+ * Applies styles to the same HTML page only.
+
+Example:
+
+<style>
+  p { color: blue; }
+</style>
+
+
+* Easier to manage than inline but not ideal for multiple pages.
+
+External CSS:- 
+
+* Written in a separate .css file and linked using <link> tag.
+
+* Example: <link rel="stylesheet" href="style.css">
+
+* Best for large projects – reusable, clean, and easier to maintain.
+
+* Lower priority than inline/internal if conflicts occur. -->
+
+<!-- Q3: Justify-content allows you to do what ? -->
+
+ <!-- Ans: justify-content allows you to:
+
+* Align flex items horizontally (main axis) inside a flex container.
+
+* Control spacing between items (start, center, end, space-between, space-around, space-evenly).
+
+* Distribute extra space in the container.
+
+* Used with display: flex or display: grid. -->
+<div class="border">
+    <h4>Justify Content Example</h4>
+    <div class="row1">
+        <div class="hub"></div>
+        <div class="hub"></div>
+        <div class="hub"></div>
+    </div>
+    <div class="row2">
+        <div class="hu"></div>
+        <div class="hu"></div>
+        <div class="hu"></div>
+    </div>
+    <div class="row3">
+        <div class="h"></div>
+        <div class="h"></div>
+        <div class="h"></div>
+    </div>
+</div>
+
+<!-- Q4: Diffrrence between absouluite and relative positioning? -->
+ <!-- Ans: Relative Positioning (position: relative)
+
+* Element is positioned relative to its original (normal) position.
+
+* Still occupies space in the layout.
+
+* Useful as a reference container for absolutely positioned child elements. -->
+
+<!-- Absolute Positioning (position: absolute)
+
+* Element is positioned relative to the nearest positioned ancestor (not the document unless none exists).
+
+* Removed from normal document flow — doesn’t take up space.
+
+* Allows precise placement anywhere inside a container. -->
+
+<!-- Q5: What is the z-index in css? -->
+ <!-- Ans: z-index in CSS :-
+
+Controls the stacking order of overlapping elements.
+
+Works only on elements with a position value other than static (e.g., relative, absolute, fixed).
+
+Higher z-index value = element appears on top.
+
+Lower z-index value = element appears behind.
+
+Default value is auto (usually 0). -->
+
+<!-- Q6:  what is difference between padding and margin?-->
+ <!-- Ans: Padding
+
+* Space inside the element, between content and border.
+
+* Increases the element’s size.
+
+* Affects the background color or image (since it’s inside the box). -->
+
+<!-- Margin
+
+* Space outside the element, between border and nearby elements.
+
+* Creates distance between elements.
+
+* Does not affect background color -->
+</body>
+</html>
